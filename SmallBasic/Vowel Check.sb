@@ -1,0 +1,10 @@
+TextWindow.Write("Enter the character in lowercase: ")
+alpha = TextWindow.Read()
+alpha = Text.ConvertToLowerCase(alpha)
+If alpha = "a" Or alpha = "e" Or alpha = "i" Or alpha = "o" Or alpha = "u" Then
+  TextWindow.WriteLine("It is a vowel")
+Else 
+  TextWindow.WriteLine("It is a consonant.")
+EndIf
+
+

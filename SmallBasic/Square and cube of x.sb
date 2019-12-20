@@ -1,0 +1,14 @@
+'This program is to calculate the square and the cube of a number
+TextWindow.WriteLine("Please input the number whose square and cube you want.")
+num_1 = TextWindow.ReadNumber()
+
+square = num_1*num_1
+TextWindow.WriteLine("The square of this number is " + square)
+
+cube = num_1*num_1*num_1
+TextWindow.WriteLine("The cube of this number is " + cube)
+
+TextWindow.WriteLine("Thank You")
+
+
+
