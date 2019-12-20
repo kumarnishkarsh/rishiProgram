@@ -1,0 +1,24 @@
+One : 
+     TextWindow.WriteLine("What is your name ?")
+var_name = TextWindow.Read()
+TextWindow.WriteLine("Hi "+ var_name)
+TextWindow.WriteLine("What is your age ?")
+var_age = TextWindow.ReadNumber()
+TextWindow.WriteLine("Your name is " + var_name)
+TextWindow.WriteLine("Your age is " + var_age)
+TextWindow.Write("Is it the correct information about you  ? type Y for yes and N for no :")
+YN = TextWindow.Read()
+up = Text.ConvertToUpperCase(YN)
+If up = "Y" Then
+  TextWindow.WriteLine("Good Now we can continue")
+Else 
+  TextWindow.WriteLine("Please restart the pogram and type it correctly.") 
+  TextWindow.Clear()
+  Goto One
+EndIf 
+
+If var_age >= 18 Then
+  TextWindow.WriteLine(var_name + " can vote")
+Else
+  TextWindow.WriteLine(var_name + " cannot vote")
+EndIf
