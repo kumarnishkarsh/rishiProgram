@@ -1,0 +1,11 @@
+TextWindow.Write("Please enter the number :")
+Num1 = TextWindow.ReadNumber()
+If Num1 > 0 Then
+  TextWindow.WriteLine("It is a positive number.")
+ElseIf Num1 = 0 Then 
+  TextWindow.WriteLine("It is a whole number.")
+Else 
+  TextWindow.WriteLine("It is a negative")
+EndIf
+
+  

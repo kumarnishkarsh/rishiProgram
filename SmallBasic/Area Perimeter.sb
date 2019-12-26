@@ -1,0 +1,37 @@
+TextWindow.Clear()
+TextWindow.WriteLine("This program is to calculate area  or perimeter of a square or rectangle")
+TextWindow.WriteLine("Which shape do you want ? S for square and R for rectangle.")
+var_shape = TextWindow.Read()
+up = Text.ConvertToUpperCase(var_shape)
+
+If up = "S" Then
+  TextWindow.WriteLine("What is the side of the square ? ")
+  side_square = TextWindow.ReadNumber()
+  TextWindow.WriteLine("You want area or perimeter of square ? Please enter A for area and P for perimeter.")
+  AP = TextWindow.Read()
+  up_2 = Text.ConvertToUpperCase(AP)
+  If up_2 = "A" Then
+    Area_square = Math.Power(side_square,2)
+    TextWindow.WriteLine("The area of the square is " + Area_square)
+  Else 
+    perimeter_square = 4*side_square
+    TextWindow.WriteLine("The perimeter of the square is " + perimeter_square)
+  EndIf
+  
+  Else 
+    TextWindow.WriteLine("What is the length of the rectangle ? ")
+    Length_rectangle = TextWindow.ReadNumber()
+    TextWindow.WriteLine("What is the breadth of recatangle ?")
+    breadth_rectangle = TextWindow.ReadNumber()
+    TextWindow.WriteLine("You want area or perimeter of rectangle ? Please enter A for area and P for perimeter.")
+    APR = TextWindow.Read()
+    up_3 = Text.ConvertToUpperCase(APR)
+    If up_3 = "A" Then
+    Area_rectangle = Length_rectangle*breadth_rectangle
+    TextWindow.WriteLine("The area of the rectangle is " + Area_rectangle)
+  Else 
+    perimeter_rectangle = 2*(Length_rectangle+breadth_rectangle)
+    TextWindow.WriteLine("The perimeter of the rectangle is " + perimeter_rectangle)
+  EndIf
+EndIf
+
