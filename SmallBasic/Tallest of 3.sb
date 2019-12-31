@@ -1,0 +1,21 @@
+'This program is to check the height of 3 people and see who is tallest.
+TextWindow.WriteLine("Type the names of the three people.")
+Name_1 = TextWindow.Read()
+Name_2 = TextWindow.Read()
+Name_3 = TextWindow.Read()
+TextWindow.WriteLine("Now please enter the heights of the people.(In cm)")
+Height_1 =  TextWindow.ReadNumber()
+Height_2 =  TextWindow.ReadNumber()
+Height_3 =  TextWindow.ReadNumber()
+TextWindow.WriteLine(Name_1 + ":" + Height_1 )
+TextWindow.WriteLine(Name_2 + ":" + Height_2 )
+TextWindow.WriteLine(Name_3 + ":" + Height_3 )
+TextWindow.WriteLine("")
+If Height_1 > Height_2 And Height_1 > Height_3 Then
+  TextWindow.WriteLine(Name_1 + " is the tallest")
+  ElseIf  Height_2 > Height_3 And Height_2 > Height_1 Then
+    TextWindow.WriteLine(Name_2 + " is the tallest")
+  Else
+    TextWindow.WriteLine(Name_3 + " is the tallest")
+  EndIf
+  
