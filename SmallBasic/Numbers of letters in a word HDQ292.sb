@@ -1,0 +1,7 @@
+TextWindow.WriteLine("This program is to check how many letters are there in a word which you type.")
+Word_1 = TextWindow.Read()
+LENGTH_WORD = Text.GetLength(Word_1)
+TextWindow.WriteLine("There are " + LENGTH_WORD + " letters in the word.")
+
+
+
