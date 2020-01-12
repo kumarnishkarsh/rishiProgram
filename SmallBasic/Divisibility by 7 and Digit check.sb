@@ -1,0 +1,21 @@
+TextWindow.WriteLine("This program is to check weather a number is divisible by 7 or not.")
+TextWindow.Write("Please enter the number :")
+Num = TextWindow.ReadNumber()
+
+If Math.Remainder(Num,7) = 0 Then
+  TextWindow.WriteLine("Divisibe")
+Else
+  TextWindow.WriteLine("Not Divisibe")
+EndIf
+
+If Num < 10 Then
+  TextWindow.WriteLine("It is of one digit.")
+  ElseIf  Num < 100 Then
+    TextWindow.WriteLine("It is of two digit.")
+    ElseIf Num < 1000 Then 
+      TextWindow.WriteLine("It is of three digit.")
+    Else
+      TextWindow.WriteLine("It is of more than 3 digits.")
+      EndIf
+  
+  

@@ -1,0 +1,17 @@
+TextWindow.WriteLine("Please type the number.")
+Num = TextWindow.ReadNumber()
+TextWindow.WriteLine("Table : ")
+TextWindow.WriteLine(" ")
+For i = 1 To 10
+  TextWindow.WriteLine(Num*i)
+EndFor
+ 
+C = 11
+TWO :
+
+D = Num * C
+C = C + 1
+TextWindow.WriteLine(D)
+If D < (Num*20) Then
+  Goto TWO
+  EndIf
