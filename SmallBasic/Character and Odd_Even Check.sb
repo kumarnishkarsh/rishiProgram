@@ -1,0 +1,18 @@
+TextWindow.WriteLine("Please enter alphabet or number.")
+Ch = TextWindow.Read()
+low = Text.ConvertToLowerCase(Ch)
+' TextWindow.WriteLine(low)
+If low >= "a" And low <= "z" Then
+  TextWindow.WriteLine(low + " is a letter.")
+Else 
+  TextWindow.WriteLine(low + " is a number.")
+EndIf
+TextWindow.WriteLine(" ")
+TextWindow.WriteLine("Please enter a number.")
+Num = TextWindow.ReadNumber()
+
+If Math.Remainder(Num,2) = 0 Then
+  TextWindow.WriteLine("Its even.")
+Else
+  TextWindow.WriteLine("Its odd.")
+  EndIf
