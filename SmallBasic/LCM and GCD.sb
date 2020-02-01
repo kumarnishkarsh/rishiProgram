@@ -1,0 +1,19 @@
+TextWindow.WriteLine("Plese type the 2 numbers.")
+a = TextWindow.ReadNumber()
+b = TextWindow.ReadNumber()
+
+l = Math.Max(a,b)
+s = Math.Min(a,b)
+
+n = 1
+One :
+multiple = l * n
+n = n + 1
+If Math.Remainder(multiple,s) = 0 Then
+  TextWindow.WriteLine("LCM is " + multiple)
+  TextWindow.WriteLine("GCD is " + (l*s)/multiple)
+Else
+  Goto One
+EndIf
+
+
