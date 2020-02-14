@@ -1,0 +1,46 @@
+Start :
+TextWindow.Write("Enter the item name : ")
+Item_name = TextWindow.Read()
+TextWindow.WriteLine("Enter the Cost Price of " + Item_name)
+Cost = TextWindow.ReadNumber()
+TextWindow.WriteLine("Enter the Selling Price of " + Item_name)
+Selling = TextWindow.ReadNumber()
+
+TextWindow.WriteLine("Item Name : " + Item_name)
+TextWindow.WriteLine("Selling Price : " + Selling)
+TextWindow.WriteLine("Cost Price : " + Cost)
+
+TextWindow.WriteLine("Is it correct ? (Press Y for Yes and N for No.)")
+Answer_YN = TextWindow.Read()
+Answer_YNCaps = Text.ConvertToUpperCase(Answer_YN)
+
+If Answer_YNCaps = "Y" Then
+  Goto Comparing
+Else
+  TextWindow.Clear()
+  Goto Start
+  EndIf
+Comparing :
+If Cost = Selling Then
+  TextWindow.WriteLine("No Profit No Loss.")
+ElseIf Cost > Selling Then
+  Loss = Cost - Selling 
+  TextWindow.WriteLine("It is a loss of rupees " + Loss)
+Else
+  Profit = Selling - Cost 
+  TextWindow.WriteLine("It is a profit of rupees " + Profit)
+EndIf
+
+TextWindow.WriteLine("Do you want do it again ? (Type yes for coninuing and no for stopping.) ")
+Answer = TextWindow.Read()
+AnswerCaps = Text.ConvertToUpperCase(Answer)
+
+If AnswerCaps = "YES" Then
+  TextWindow.Clear()
+  Goto Start
+Else
+Goto End  
+EndIf
+
+End :
+TextWindow.WriteLine("Thank you")
