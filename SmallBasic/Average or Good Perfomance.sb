@@ -1,0 +1,22 @@
+TextWindow.WriteLine("Enter your name.")
+name = TextWindow.Read()
+TextWindow.WriteLine("Enter the subject.")
+subj = TextWindow.Read()
+
+TextWindow.WriteLine("Please enter the outof marks.")
+outof = TextWindow.ReadNumber()
+TextWindow.WriteLine("Please enter your marks.")
+marks = TextWindow.ReadNumber()
+percentage = marks/outof*100
+
+If percentage >= 80 Then
+  TextWindow.WriteLine(name + " has done good performance in " + subj)
+ElseIf percentage >= 40 Then
+  TextWindow.WriteLine(name + " has done average performance in " + subj)
+Else
+  TextWindow.WriteLine(name + " has done bad performance in " + subj)
+EndIf
+
+
+
+  
