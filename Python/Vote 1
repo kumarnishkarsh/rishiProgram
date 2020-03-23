@@ -1,0 +1,10 @@
+name = "Rishi"
+age = 15
+
+print("Your name :" , name)
+print("Your age :" , age)
+
+if age >= 18:
+    print(name , "can vote.")
+else:
+    print(name , "cannot vote.")
